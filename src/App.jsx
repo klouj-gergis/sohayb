@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import Home from "./components/pages/Home.jsx";
 import Checkout from "./components/pages/Checkout.jsx";
-import ThankYou from "./components/pages/Thankyou.jsx";
+import ThankYou from "./components/pages/ThankYou.jsx";
 
 function App() {
   return (
