@@ -13,8 +13,8 @@ export default function ProductCard({ name, size, price, imageUrl, index }) {
   return (
     <motion.div 
     className="bg-white border border-olive rounded-2xl shadow-md p-4 hover:shadow-lg transition duration-300 w-72 text-center flex flex-col items-center hover:border-olive-light hover:border-2"
-    initial={{ opacity: 0, x: 50 }}
-    whileInView={{ opacity: 1, x: 0 }}
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.9, delay: index * 0.2, ease: 'easeOut' }}
     viewport={{ once: true }}
     >
