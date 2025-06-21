@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+@theme{
+  --color-olive: #6B8E23;
+  --color-olive-dark: #166534;
+  --color-olive-light: #74be6a;
+  --color-darkolive: #3A4D29;
+  --color-goldleaf: #D4AF37;
+  --color-goldleaf-light: #e8cb76;
+  --color-stone: #F9F5EC;
+  --color-warmbrown: #8B5E3C;
+  --color-sage: #A8B2A1;
+  --color-aheeeh: #343434;
+  --font-display: "Edu NSW ACT Hand Pre", sans-serif;
+}
