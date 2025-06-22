@@ -17,7 +17,7 @@ export default function Hero() {
           isArabic ? 'items-end text-right' : 'items-start text-left'
         }`}
       >
-        <h2 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-7xl font-semibold text-white">
           {t('hero.header')}
         </h2>
 
