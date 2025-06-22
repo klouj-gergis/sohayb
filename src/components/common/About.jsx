@@ -10,6 +10,7 @@ export default function About() {
 
   return (
     <motion.section
+      id='about'
       className="bg-white flex flex-col lg:flex-row items-center p-4 md:p-8 w-full min-h-[80vh] gap-6"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
