@@ -9,7 +9,7 @@ export default function Hero() {
 
   const lang = i18n.language
   const textdir = lang === 'ar' ? 'right' : 'left';
-
+  console.log(lang, textdir)
 
   return (
     <section
@@ -17,7 +17,7 @@ export default function Hero() {
       className="w-full min-h-[90vh] flex items-center justify-center bg-olive-dark px-4 sm:px-6"
       data-aos="fade-up"
     >
-      <div className={`flex flex-col gap-5 w-full max-w-4xl `}>
+      <div className={`flex flex-col gap-5 w-full max-w-4xl items-${textdir}`}>
         <h2 className={`text-3xl sm:text-4xl md:text-6xl font-semibold text-white text-${textdir}`}>
           {t("hero.header")}
         </h2>
