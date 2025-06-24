@@ -13,7 +13,7 @@ export default function Hero() {
       data-aos="fade-up"
     >
       <div
-        className={`flex flex-col gap-5 w-full max-w-4xl ${
+        className={`flex flex-col gap-5 w-full max-w-4xl -translate-y-8 ${
           isArabic ? 'items-end text-right' : 'items-start text-left'
         }`}
       >
