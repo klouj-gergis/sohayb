@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="text-2xl sm:text-3xl text-white font-bold">
-          SOHAYB
+          <img src="/public/images/logo.png" alt="logo" className="w-40" />
         </a>
         <div className="hidden md:flex gap-5">
         {/* Desktop Menu */}
@@ -53,6 +53,14 @@ export default function Navbar() {
           <a href="/" className="block hover:underline">Home</a>
           <a href="#about" className="block hover:underline">About</a>
           <a href="#contact" className="block hover:underline">Contact</a>
+          <div className="flex  border rounded-3xl p-1 w-fit">
+          <button className={` ${lang === 'ar' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer`} onClick={() => {
+            handleChangeLanguage("ar")
+          }}>ar</button>
+          <button className={` ${lang === 'en' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer`} onClick={() => {
+            handleChangeLanguage("en")
+          }}>en</button>
+        </div>
         </div>
       )}
     </header>

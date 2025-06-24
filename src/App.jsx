@@ -8,7 +8,7 @@ function App() {
   return (
     <PayPalScriptProvider options={{ "client-id": "ATNdwhCwuFQa6AXA525gJ44KRXsHwzRQ7wQmFsI7L36SE3c4BXtMCu-XguFRhZGD8eK7gGu_RNOxXti2" }}>
       <Router>
-        <div className="bg-stone text-white font-playfair min-h-screen">
+        <div className="bg-stone text-white font-playfair min-h-screen ">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/checkout" element={<Checkout />} />

@@ -1,5 +1,4 @@
-import React from 'react';
-import olivetree from '../../assets/olive.jpeg';
+
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -19,9 +18,9 @@ export default function About() {
     >
       {/* Image Container */}
       <div className="w-full lg:w-6/12 flex items-center justify-center">
-        <div className="relative w-[80vw] h-[40vh] sm:w-[70vw] md:w-[60vw] lg:w-[60vh] lg:h-[40vh] bg-olive">
+        <div className="relative w-[80vw] h-[40vh] sm:w-[70vw] md:w-[60vw] lg:w-[60vh] lg:h-[40vh] bg-olive-dark ">
           <motion.img
-            src={olivetree}
+            src="/public/images/about-us.jpg"
             alt="olive tree"
             className="absolute w-full -top-3 -left-3 object-cover h-full"
             initial={{ top: 0 , left: 0 }}

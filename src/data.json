@@ -1,5 +1,5 @@
 [
-  { "id": 1, "name": "large", "price": "24", "size": "400ml", "imageUrl": "/images/bottle.jpg" },
-  { "id": 2, "name": "meduim", "price": "20", "size": "350ml", "imageUrl": "/images/bottle.jpg" },
-  { "id": 3, "name": "Small", "price":"15", "size": "250ml", "imageUrl": "/images/bottle.jpg" }
+  { "id": 1, "name": "large", "price": "600", "size": "1000ml", "imageUrl": "/images/bottle.jpg" },
+  { "id": 2, "name": "meduim", "price": "320", "size": "500ml", "imageUrl": "/images/bottle.jpg" },
+  { "id": 3, "name": "Small", "price":"180", "size": "250ml", "imageUrl": "/images/bottle.jpg" }
 ]
