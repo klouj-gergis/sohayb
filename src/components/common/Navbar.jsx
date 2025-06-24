@@ -24,7 +24,7 @@ export default function Navbar() {
         <nav className="hidden md:flex gap-6 text-base items-center">
           <a href="/" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
-          <a href="#contact" className="hover:underline">Contact</a>
+          <a href="#contact" className="hover:underline">Contact Us</a>
         </nav>
 
         <div className="flex  border rounded-3xl p-1">
@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="md:hidden mt-4 space-y-3 px-2 text-sm">
           <a href="/" className="block hover:underline">Home</a>
           <a href="#about" className="block hover:underline">About</a>
-          <a href="#contact" className="block hover:underline">Contact</a>
+          <a href="#contact" className="block hover:underline">Contact Us</a>
           <div className="flex  border rounded-3xl p-1 w-fit">
           <button className={` ${lang === 'ar' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer`} onClick={() => {
             handleChangeLanguage("ar")

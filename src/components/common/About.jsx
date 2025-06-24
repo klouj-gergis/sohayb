@@ -34,7 +34,7 @@ export default function About() {
       {/* Text Content */}
       <div className="w-full lg:w-6/12 p-2 sm:p-4 flex flex-col gap-4 text-center lg:text-left">
         <h3 className={`text-olive text-3xl sm:text-4xl font-semibold text-${textdir}`}>{t("about.header")}</h3>
-        <p className={`text-warmbrown text-base sm:text-lg md:text-xl text-${textdir}`}>
+        <p className={`text-olive-dark text-base sm:text-lg md:text-xl text-${textdir}`}>
           {t("about.text")}
         </p>
       </div>
