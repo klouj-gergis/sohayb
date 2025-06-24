@@ -28,10 +28,10 @@ export default function Navbar() {
         </nav>
 
         <div className="flex  border rounded-3xl p-1">
-          <button className={` ${lang === 'ar' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer`} onClick={() => {
+          <button className={` ${lang === 'ar' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer focus-outline-none`} onClick={() => {
             handleChangeLanguage("ar")
           }}>ar</button>
-          <button className={` ${lang === 'en' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer`} onClick={() => {
+          <button className={` ${lang === 'en' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer focus-outline-none`} onClick={() => {
             handleChangeLanguage("en")
           }}>en</button>
         </div>

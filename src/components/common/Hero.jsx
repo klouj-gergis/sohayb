@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full min-h-[90vh] flex items-center justify-center bg-olive-dark px-4 sm:px-6"
+      className="w-full min-h-[90vh] flex items-center justify-center bg-[url('/images/hero-bg.jpg')] px-4 sm:px-6 bg-cover bg-center"
       data-aos="fade-up"
     >
       <div
@@ -17,11 +17,11 @@ export default function Hero() {
           isArabic ? 'items-end text-right' : 'items-start text-left'
         }`}
       >
-        <h2 className="text-3xl sm:text-4xl md:text-7xl font-semibold text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-7xl font-semibold text-olive-dark">
           {t('hero.header')}
         </h2>
 
-        <p className="text-lg md:text-2xl text-goldleaf-light">
+        <p className="text-lg md:text-2xl text-olive">
           {t('hero.text')}
         </p>
 
