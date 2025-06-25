@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="p-5 bg-white"
+      className="p-5 bg-olive-dark"
       data-aos="fade-up"
     >
       <motion.div className="bg-white py-10 px-4  md:px-12 max-w-5xl mx-auto mb-20 mt-20 border-2 border-olive hover:border-olive-light p-5"
