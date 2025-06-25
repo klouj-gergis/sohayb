@@ -10,7 +10,7 @@ export default function About() {
   return (
     <motion.section
       id='about'
-      className="bg-olive-dark flex flex-col lg:flex-row items-center p-4 md:p-8 w-full min-h-[80vh] gap-6"
+      className="bg-white flex flex-col lg:flex-row items-center p-4 md:p-8 w-full min-h-[80vh] gap-6"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: 'easeOut'}}
@@ -34,7 +34,7 @@ export default function About() {
       {/* Text Content */}
       <div className="w-full lg:w-6/12 p-2 sm:p-4 flex flex-col gap-4 text-center lg:text-left">
         <h3 className={`text-olive text-3xl sm:text-4xl font-semibold text-${textdir}`}>{t("about.header")}</h3>
-        <p className={`text-white text-base sm:text-lg md:text-xl text-${textdir}`}>
+        <p className={`text-olive-dark text-base sm:text-lg md:text-xl text-${textdir}`}>
           {t("about.text")}
         </p>
       </div>

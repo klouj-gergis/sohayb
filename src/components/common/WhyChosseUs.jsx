@@ -1,6 +1,6 @@
 export default function WhyChooseUs() {
   return (
-    <section className="w-full h-[80vh] bg-olive-dark  max-h-screen overflow-hidden p-6 flex flex-col gap-6">
+    <section className="w-full h-[80vh] bg-white  max-h-screen overflow-hidden p-6 flex flex-col gap-6">
       <h3 className="text-3xl text-olive font-semibold text-left md:text-center">
         Why Choose Us
       </h3>
