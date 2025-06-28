@@ -28,8 +28,8 @@ export default function Footer() {
         <div className="md:w-1/3 flex flex-col gap-2  text-sm">
           <h5 className="text-white font-semibold mb-2">Quick Links</h5>
           <a href="#home" className="hover:underline">Home</a>
-          <a href="#about" className="hover:underline">About</a>
           <a href="#products" className="hover:underline">Products</a>
+          <a href="#about" className="hover:underline">About</a>
           <a href="#contact" className="hover:underline">Contact</a>
         </div>
 
