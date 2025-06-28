@@ -13,19 +13,17 @@ export default function Hero() {
       data-aos="fade-up"
     >
       <div
-        className={`flex flex-col gap-5 w-full max-w-4xl -translate-y-8 ${
-          isArabic ? 'items-end text-right' : 'items-start text-left'
-        }`}
+        className={`flex flex-col gap-5 w-full max-w-4xl -translate-y-8 `}
       >
         <h2 className="text-3xl sm:text-4xl md:text-7xl font-semibold text-olive-dark">
           {t('hero.header')}
         </h2>
 
-        <p className="text-lg md:text-2xl w-4/6 md:w-3/6 text-olive">
+        <p className="text-lg md:text-2xl w-4/6 md:w-3/6 text-olive ">
           {t('hero.text')}
         </p>
 
-        <div className={`flex ${isArabic ? 'justify-end' : 'justify-start'}`}>
+        <div className={`flex `}>
           <a
             href="#products"
             className="block bg-goldleaf text-darkolive font-medium py-2 px-4 rounded hover:opacity-90 transition text-sm sm:text-base"

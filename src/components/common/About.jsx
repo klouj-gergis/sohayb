@@ -1,11 +1,19 @@
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { t, i18n } = useTranslation('global');
   const lang = i18n.language;
   const textdir = lang === 'en' ? 'left' : 'right';
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
+
+  const text = t('about.text');
 
   return (
     <motion.section
@@ -34,9 +42,17 @@ export default function About() {
       {/* Text Content */}
       <div className="w-full lg:w-6/12 p-2 sm:p-4 flex flex-col gap-4 text-center lg:text-left">
         <h3 className={`text-olive text-3xl sm:text-4xl font-semibold text-${textdir}`}>{t("about.header")}</h3>
-        <p className={`text-olive-dark text-base sm:text-lg md:text-xl text-${textdir}`}>
-          {t("about.text")}
-        </p>
+        <div>
+          <p className={`text-olive-dark text-base sm:text-lg md:text-xl text-${textdir}`}>
+            {isExpanded ? text : `${text.slice(0, 545)}`}  ... <span onClick={toggleReadMore} className='text-olive hover:cursor-pointer'>{isExpanded ? t('about.toggle.less') : t('about.toggle.more')}</span>
+          </p>
+          <button
+          onClick={toggleReadMore}
+          className='text-olive-dark'
+          >
+            
+          </button>
+        </div>
       </div>
     </motion.section>
   );

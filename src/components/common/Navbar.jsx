@@ -25,6 +25,7 @@ export default function Navbar() {
           <a href="/" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
           <a href="#contact" className="hover:underline">Contact Us</a>
+          <a href="#products" className="hover:underline">Products</a>
         </nav>
 
         <div className="flex  border rounded-3xl p-1">
@@ -39,7 +40,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-olive"
+          className="md:hidden text-white"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle Menu"
         >
@@ -53,6 +54,7 @@ export default function Navbar() {
           <a href="/" className="block hover:underline">Home</a>
           <a href="#about" className="block hover:underline">About</a>
           <a href="#contact" className="block hover:underline">Contact Us</a>
+          <a href="#products" className="block hover:underline">Products</a>
           <div className="flex  border rounded-3xl p-1 w-fit">
           <button className={` ${lang === 'ar' ? "bg-olive" : ''} p-1 rounded-full text-xs hover:cursor-pointer`} onClick={() => {
             handleChangeLanguage("ar")
