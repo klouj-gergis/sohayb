@@ -23,7 +23,7 @@ export default function About() {
         return (
           <div key={index}>
             <h4 className='font-bold text-xl'>{person.name}</h4>
-            <p className='text-olive-dark font-semibold'>
+            <p className='font-semibold'>
               {person.story}
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function About() {
         return (
           <div key={index}>
             <h4 className='font-bold text-xl'>{person.name}</h4>
-            <p className='text-olive-dark font-semibold'>
+            <p className='font-semibold'>
               {person.story}
             </p>
           </div>
@@ -72,15 +72,19 @@ export default function About() {
       <div className="w-full lg:w-6/12 p-2 sm:p-4 flex flex-col gap-4 text-center lg:text-left">
         <h3 className={`text-olive text-3xl sm:text-4xl font-semibold text-${textdir}`}>{t("about.header")}</h3>
         <div className={`text-olive flex flex-col gap-5 text-${textdir}`}>
-          {
-            t("about.intro")
-          }
+          <p className='font-semibold'>
+            {
+              t("about.intro")
+            }
+          </p>
           {
             getparagraphs()
           }
-          {
-            isExpanded ? t("about.outro") : ''
-          }
+          <p className='font-semibold'>
+            {
+              isExpanded ? t("about.outro") : ''
+            }
+          </p>
         </div>
         <button className='px-2 py-1 bg-olive flex w-fit hover:cursor-pointer' onClick={toggleReadMore}>
           {isExpanded ? t("about.toggle.less") : t("about.toggle.more")}
