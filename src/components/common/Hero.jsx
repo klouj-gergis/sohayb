@@ -26,7 +26,7 @@ export default function Hero() {
         <div className={`flex `}>
           <a
             href="#products"
-            className="block bg-goldleaf text-darkolive font-medium py-2 px-4 rounded hover:opacity-90 transition text-sm sm:text-base"
+            className="block bg-olive text-white font-medium py-2 px-4 rounded hover:opacity-90 transition text-sm sm:text-base"
           >
             {t('hero.button')}
           </a>

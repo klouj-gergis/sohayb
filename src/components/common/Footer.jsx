@@ -22,7 +22,7 @@ export default function Footer() {
           <p className="text-goldleaf mt-2 text-sm">
             Pure. Organic. Timeless.
           </p>
-          <p className="text-goldleaf mt-1 text-sm">
+          <p className="mt-1 text-sm">
             Premium Extra virgin olive oil, cold-pressed and 100% natural.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="bg-goldleaf text-darkolive px-4 py-2 rounded hover:opacity-90 transition text-sm"
+                className="bg-olive text-white px-4 py-2 rounded hover:opacity-90 transition text-sm"
               >
                 Subscribe
               </button>

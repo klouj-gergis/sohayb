@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+
 export default function About() {
   const [isExpanded, setIsExpanded] = useState(false);
   const { t, i18n } = useTranslation('global');
@@ -13,7 +14,35 @@ export default function About() {
     setIsExpanded(!isExpanded)
   }
 
-  const text = t('about.text');
+  const people = t('about.people', { returnObjects: true });
+
+  const getparagraphs = () => {
+    let parags;
+    if(!isExpanded){
+      parags = people.slice(0, 1).map((person, index) => {
+        return (
+          <div key={index}>
+            <h4 className='font-bold text-xl'>{person.name}</h4>
+            <p className='text-olive-dark font-semibold'>
+              {person.story}
+            </p>
+          </div>
+        )
+      })
+    }else {
+      parags = people.map((person, index) => {
+        return (
+          <div key={index}>
+            <h4 className='font-bold text-xl'>{person.name}</h4>
+            <p className='text-olive-dark font-semibold'>
+              {person.story}
+            </p>
+          </div>
+        )
+      })
+    }
+    return parags;
+  }
 
   return (
     <motion.section
@@ -42,17 +71,20 @@ export default function About() {
       {/* Text Content */}
       <div className="w-full lg:w-6/12 p-2 sm:p-4 flex flex-col gap-4 text-center lg:text-left">
         <h3 className={`text-olive text-3xl sm:text-4xl font-semibold text-${textdir}`}>{t("about.header")}</h3>
-        <div>
-          <p className={`text-olive-dark text-base sm:text-lg md:text-xl text-${textdir}`}>
-            {isExpanded ? text : `${text.slice(0, 545)}`}  ... <span onClick={toggleReadMore} className='text-olive hover:cursor-pointer'>{isExpanded ? t('about.toggle.less') : t('about.toggle.more')}</span>
-          </p>
-          <button
-          onClick={toggleReadMore}
-          className='text-olive-dark'
-          >
-            
-          </button>
+        <div className={`text-olive flex flex-col gap-5 text-${textdir}`}>
+          {
+            t("about.intro")
+          }
+          {
+            getparagraphs()
+          }
+          {
+            isExpanded ? t("about.outro") : ''
+          }
         </div>
+        <button className='px-2 py-1 bg-olive flex w-fit hover:cursor-pointer' onClick={toggleReadMore}>
+          {isExpanded ? t("about.toggle.less") : t("about.toggle.more")}
+        </button>
       </div>
     </motion.section>
   );

@@ -6,7 +6,26 @@
   },
   "about": {
     "header": "من نحن",
-    "text": "مشروع عائلي بدأ في عام 2017 بزرع أول شجرة زيتون في مزارع شمال سيناء. واليوم، نواصل رحلتنا بفخر لنقدم لكم زيت زيتون عالي الجودة مباشرة إلى منازلكم منذ عام 2017، بدأت رحلتنا كعائلة بزراعة أول شجرة زيتون في أرضنا بشمال سيناء. لم يكن المشروع مجرد عمل زراعي، بل كان بداية حقيقية لحلم جمع أفراد عائلة واحدة، كل واحد فيهم له دور وبصمة. الحاج محمود موسى، رب الأسرة، هو حجر الأساس في كل شيء. كان أول من آمن بالفكرة، وقضى سنوات يتابع الأشجار يومًا بيوم، يزرع، يسقي، ويعتني بالأرض كأنها قطعة من قلبه. الأستاذة سماح إبراهيم، الأم، كانت العقل المنظّم للمزرعة، تتابع سير العمل وتدير التفاصيل، وتوفّر كل دعم مادي ومعنوي لاستمرار المشروع. كانت القوة الهادئة خلف الكواليس، اللي دايمًا بتدفع بالعيلة خطوة لقدّام، وتحافظ على التوازن وقت التحديات. صهيب محمود، الابن الأكبر، هو اللي حوّل حلم الأرض إلى مشروع متكامل. اشتغل على العلامة التجارية، التصميم، التوزيع، والسوشيال ميديا. قدر يوصل صوت العيلة للعالم، وخلّى زيت 'Sohayb' علامة مميزة في سوق الزيت الفاخر. نور الدين محمود، الابن الأصغر، رغم صغر سنه، كان دايمًا حاضر وقت الجد. يشارك في جمع الزيتون، يرتّب الزجاجات، ويساعد في المزرعة بحماس وابتسامة حقيقية. زيت 'Sohayb' مش بس منتج، ده خلاصة تعب عيلة، وتعاون أجيال، من الجد والاجتهاد في الأرض، للرؤية والتنظيم، وللشباب اللي حملوا الحلم على أكتافهم. كل زجاجة بتحمل اسمنا… وبتحكي حكايتنا.",
+    "intro": "Since 2017, our journey began as a family — with the planting of our first olive tree in the land of North Sinai. This wasn’t just a farming project; it was the beginning of a shared dream, where every family member had a role and left their mark.",
+    "outro": "Sohayb Olive Oil is more than just a product — it’s the result of real family effort, built on trust, hard work, and shared vision across generations. Every bottle carries our name… and tells our story.",
+    "people": [
+      {
+        "name": "Mahmoud Mousa",
+        "story": "the father and pillar of the family, was the first to believe in the vision. He spent years caring for each tree, nurturing the land as if it were part of himself — planting, watering, and following every step with love and dedication."
+      },
+      {
+        "name": "Samah Ibrahim",
+        "story": " the mother, was the mind behind the organization of the farm. She oversaw daily operations, managed the flow of work, and provided both financial and emotional support. Always working quietly behind the scenes, she was the steady force that held everything together and pushed the family forward during challenging times."
+      },
+      {
+        "name": "Sohayb Mahmoud",
+        "story": "the eldest son, took the family’s vision to the next level. He built the brand, led the design and marketing efforts, and shared the story with the world. Thanks to his work, Sohayb Olive Oil became a name that reflects both quality and identity."
+      },
+      {
+        "name": "Nour El-Din Mahmoud",
+        "story": "the youngest, was always present during harvest days. Despite his young age, he helped collect the olives, arrange the bottles, and contribute with joy and enthusiasm."
+      }
+    ],
     "toggle": {
       "more": "المزيد",
       "less": "أقل"
