@@ -19,7 +19,7 @@ export default function Hero() {
           {t('hero.header')}
         </h2>
 
-        <p className="text-lg md:text-2xl w-4/6 md:w-3/6 text-olive ">
+        <p className="text-lg md:text-2xl w-4/6 md:w-3/6 text-goldleaf ">
           {t('hero.text')}
         </p>
 

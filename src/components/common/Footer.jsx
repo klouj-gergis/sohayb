@@ -19,16 +19,13 @@ export default function Footer() {
         {/* Brand Info */}
         <div className="md:w-1/3">
           <h4 className="text-xl sm:text-2xl font-bold">Sohayb Olive Oil</h4>
-          <p className="text-goldleaf mt-2 text-sm">
-            Pure. Organic. Timeless.
-          </p>
           <p className="mt-1 text-sm">
             Premium Extra virgin olive oil, cold-pressed and 100% natural.
           </p>
         </div>
 
         {/* Links */}
-        <div className="md:w-1/3 flex flex-col gap-2 text-goldleaf text-sm">
+        <div className="md:w-1/3 flex flex-col gap-2  text-sm">
           <h5 className="text-white font-semibold mb-2">Quick Links</h5>
           <a href="#home" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
@@ -62,7 +59,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-goldleaf mt-8 pt-4 text-center text-xs text-goldleaf">
+      <div className="border-t mt-8 pt-4 text-center text-xs ">
         &copy; {new Date().getFullYear()} Sohayb Olive Oil. All rights reserved.
       </div>
     </footer>
