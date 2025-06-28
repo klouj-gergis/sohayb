@@ -18,18 +18,7 @@ export default function About() {
 
   const getparagraphs = () => {
     let parags;
-    if(!isExpanded){
-      parags = people.slice(0, 1).map((person, index) => {
-        return (
-          <div key={index}>
-            <h4 className='font-bold text-xl'>{person.name}</h4>
-            <p className='font-semibold'>
-              {person.story}
-            </p>
-          </div>
-        )
-      })
-    }else {
+    if(isExpanded){
       parags = people.map((person, index) => {
         return (
           <div key={index}>
