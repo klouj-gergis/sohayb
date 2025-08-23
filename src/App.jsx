@@ -1,22 +1,37 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import Home from "./components/pages/Home.jsx";
 import Checkout from "./components/pages/Checkout.jsx";
 import ThankYou from "./components/pages/ThankYou.jsx";
+import Login from "./components/pages/Login.jsx";
+import Signup from "./components/pages/Signup.jsx";
+import Cart from "./components/pages/Cart.jsx";
+import { useState } from "react";
+import Payment from "./components/pages/Payment.jsx";
+import { Toaster } from "react-hot-toast";
+
+
 
 function App() {
+    
   return (
-    <PayPalScriptProvider options={{ "client-id": "ATNdwhCwuFQa6AXA525gJ44KRXsHwzRQ7wQmFsI7L36SE3c4BXtMCu-XguFRhZGD8eK7gGu_RNOxXti2" }}>
-      <Router>
-        <div className="bg-stone text-white font-playfair min-h-screen ">
-          <Routes>
-            <Route path="/" element={<Home />} />
+    <Router>
+      <Toaster position="top-right" />
+      <div className="bg-stone text-white font-playfair min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
+
+          {/* Protected Routes Group */}
+          
             <Route path="/checkout" element={<Checkout />} />
-            <Route path="/thank-you" element={<ThankYou />} /> {/* Add ThankYou route */}
-          </Routes>
-        </div>
-      </Router>
-    </PayPalScriptProvider>
+            <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/payment" element={<Payment />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

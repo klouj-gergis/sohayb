@@ -8,7 +8,7 @@ export default function ThankYou() {
       <p className="text-xl mb-6 text-goldleaf">Your message has been successfully received.</p>
       <Link 
         to="/" 
-        className="bg-goldleaf text-darkolive px-6 py-3 rounded hover:opacity-90 transition"
+        className="bg-olive text-white px-6 py-3 rounded hover:opacity-90 transition"
       >
         Back to Home
       </Link>

@@ -33,5 +33,26 @@
   },
   "product": {
     "name": "Sohayb Olive Oil"
-  }
+  },
+
+  "checkoutForm" : {
+    "header": "Checkout",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "governate": "Governate",
+    "paymentMethod": "Payment Method",
+    "submitButton": "Place Order"
+  }, 
+
+  "cart": {
+  "header": "Shopping Cart",
+  "empty": "Your cart is empty",
+  "subtotal": "Subtotal",
+  "taxRate": "Tax Rate",
+  "checkoutButton": "Checkout"
+}
+
 }

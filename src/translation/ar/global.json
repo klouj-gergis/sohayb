@@ -33,5 +33,25 @@
   },
   "product": {
     "name": "زيت زتون صهيب"
+  }, 
+
+  "checkoutForm": {
+  "header": "إتمام الشراء",
+  "name": "الاسم",
+  "email": "البريد الإلكتروني",
+  "phone": "رقم الهاتف",
+  "address": "العنوان",
+  "city": "المدينة",
+  "governate": "المحافظة",
+  "paymentMethod": "طريقة الدفع",
+  "submitButton": "إتمام الطلب"
+},
+
+  "cart": {
+    "header": "عربة التسوق",
+    "empty": "عربة التسوق فارغة",
+    "subtotal": "المجموع الفرعي",
+    "taxRate": "النسبة الضريبية",
+    "checkoutButton": "إتمام الشراء"
   }
 }
