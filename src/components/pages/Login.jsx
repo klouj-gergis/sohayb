@@ -26,7 +26,7 @@ export default function Login() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-2/6 p-5 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col gap-5">
+      <div className="w-full h-full md:h-fit md:w-2/6 p-5 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col justify-center gap-5">
         <div className="bg-olive flex flex-col items-center justify-center p-8 rounded-lg shadow-lg text-white">
           <h1 className="text-3xl font-bold text-center mb-6">Login</h1>
           {loading ? (<p>Loading...</p>) : (<p>Welcome back</p>)}
@@ -37,15 +37,15 @@ export default function Login() {
                 {error}
               </div>
             )}
-          <form onSubmit={handleSubmit}>
-            
+          <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
+
             <div>
               <label className="block mb-2 text-sm font-medium text-olive">Email</label>
               <input 
                 name='email' 
                 onChange={handleChange} 
                 type="email" 
-                className="w-full p-2 border border-olive rounded-lg mb-4 text-olive" 
+                className="w-full p-4 border border-olive rounded-lg mb-4 text-olive" 
                 placeholder="Enter your email" 
                 value={formData.email}
                 required
@@ -58,7 +58,7 @@ export default function Login() {
                 name='password' 
                 onChange={handleChange} 
                 type="password" 
-                className="w-full p-2 border border-olive text-olive rounded-lg mb-4" 
+                className="w-full p-4 border border-olive text-olive rounded-lg mb-4" 
                 placeholder="Enter your password" 
                 value={formData.password}
                 required
@@ -67,7 +67,7 @@ export default function Login() {
             </div>
             <button 
               type="submit" 
-              className="w-full bg-olive text-white p-2 rounded-lg hover:bg-olive-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-olive text-white py-5 md:p-2 rounded-lg hover:bg-olive-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={loading}
             >
               {loading ? 'Logging in...' : 'Login'}

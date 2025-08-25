@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuthStore } from '../../store/authStore';
 import api from "../../api";
 
 export default function Signup() {
@@ -10,7 +11,7 @@ export default function Signup() {
     password_confirmation: '',
     date_of_birth: '' 
   });
-  const { register, loading } = useAuthStore();
+  const { register, loading, error } = useAuthStore();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -46,13 +47,13 @@ export default function Signup() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-2/6 p-5 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col gap-5">
+      <div className="w-full h-full md:h-fit md:w-2/6 p-5 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col justify-center gap-5">
         <div className="bg-olive flex flex-col items-center justify-center p-8 rounded-lg shadow-lg text-white">
           <h1 className="text-3xl font-bold text-center mb-6">Sign Up</h1>
           <p>Welcome!</p>
         </div>
         <div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
             {error && (
               <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg">
                 {error}
@@ -65,7 +66,7 @@ export default function Signup() {
                 name="name" 
                 onChange={handleChange} 
                 type="text" 
-                className="w-full p-2 border border-olive rounded-lg mb-4 text-olive focus:outline-none focus:border-olive-dark" 
+                className="w-full p-4 border border-olive rounded-lg mb-4 text-olive focus:outline-none focus:border-olive-dark" 
                 placeholder="Enter your name" 
                 value={formData.name}
                 required
@@ -79,7 +80,7 @@ export default function Signup() {
                 name="email"
                 onChange={handleChange} 
                 type="email" 
-                className="w-full p-2 border border-olive rounded-lg mb-4 text-olive focus:outline-none focus:border-olive-dark" 
+                className="w-full p-4 border border-olive rounded-lg mb-4 text-olive focus:outline-none focus:border-olive-dark" 
                 placeholder="Enter your email" 
                 value={formData.email}
                 required
@@ -95,7 +96,7 @@ export default function Signup() {
               name="date_of_birth"
               onChange={handleChange} 
               required
-              className="w-full p-2 border border-olive rounded-lg mb-4 text-olive focus:outline-none focus:border-olive-dark"
+              className="w-full p-4 border border-olive rounded-lg mb-4 text-olive focus:outline-none focus:border-olive-dark"
               value={formData.date_of_birth}
               />
             </div>
@@ -106,7 +107,7 @@ export default function Signup() {
                 name="password"
                 onChange={handleChange} 
                 type="password" 
-                className="w-full p-2 border border-olive text-olive rounded-lg mb-4 focus:outline-none focus:border-olive-dark" 
+                className="w-full p-4 border border-olive text-olive rounded-lg mb-4 focus:outline-none focus:border-olive-dark" 
                 placeholder="Enter your password" 
                 value={formData.password}
                 required
@@ -121,7 +122,7 @@ export default function Signup() {
                 name="password_confirmation" 
                 onChange={handleChange} 
                 type="password" 
-                className="w-full p-2 border border-olive text-olive rounded-lg mb-4 focus:outline-none focus:border-olive-dark" 
+                className="w-full p-4 border border-olive text-olive rounded-lg mb-4 focus:outline-none focus:border-olive-dark" 
                 placeholder="Confirm your password" 
                 value={formData.password_confirmation}
                 required
@@ -131,7 +132,7 @@ export default function Signup() {
             
             <button 
               type="submit" 
-              className="w-full bg-olive text-white p-2 rounded-lg hover:bg-olive-dark hover:cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-olive text-white p-5 rounded-lg hover:bg-olive-dark hover:cursor-pointer transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={loading}
             >
               {loading ? 'Creating Account...' : 'Sign Up'}

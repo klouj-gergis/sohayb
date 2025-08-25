@@ -64,7 +64,7 @@ const handleReturnToShop = async () => {
     );
   }
 
-  if(!loading || !authLoading && cartItems.length === 0) {
+  if(!loading || !authLoading  && cartItems.length === 0) {
     return (
       <div className="w-full flex items-center justify-center min-h-screen bg-stone text-olive">
         <div className="text-center flex flex-col items-center gap-2">
