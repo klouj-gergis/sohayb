@@ -21,9 +21,9 @@ export default function Navbar() {
     <header className="w-full bg-olive-dark text-white px-4 sm:px-6 py-4 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="text-2xl sm:text-3xl text-white font-bold">
-          <img src="/images/logo.png" alt="logo" className="w-40" />
-        </a>
+        <Link to="/" className="text-2xl sm:text-3xl text-white font-bold">
+          <img src="/images/logo.png" alt="logo" className="w-30" />
+        </Link>
         <div className="hidden md:flex gap-5">
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-6 text-base items-center">
