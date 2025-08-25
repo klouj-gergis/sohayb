@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import api from "../../api";
 
@@ -47,13 +47,13 @@ export default function Signup() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-full h-full md:h-fit md:w-2/6 p-5 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col justify-center gap-5">
+      <div className="w-full h-full md:h-fit md:w-2/6 px-5 py-10 border border-gray-300 rounded-lg shadow-lg bg-white flex flex-col justify-center gap-5">
         <div className="bg-olive flex flex-col items-center justify-center p-8 rounded-lg shadow-lg text-white">
           <h1 className="text-3xl font-bold text-center mb-6">Sign Up</h1>
           <p>Welcome!</p>
         </div>
         <div>
-          <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
+          <form onSubmit={handleSubmit}>
             {error && (
               <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg">
                 {error}
@@ -138,6 +138,12 @@ export default function Signup() {
               {loading ? 'Creating Account...' : 'Sign Up'}
             </button>
           </form>
+          <p className="mt-4 text-center text-olive">
+            Already have an account?{' '}
+            <Link to="/login" className="text-blue underline">
+              Login
+            </Link>
+          </p>
         </div>
       </div>
     </div>
