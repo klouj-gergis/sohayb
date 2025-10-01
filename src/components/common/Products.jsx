@@ -5,7 +5,26 @@ import { useProductStore } from '../../store/productStore.js';
 
 export default function Products() {
   const { products , loading, error, getProducts } = useProductStore()
-
+  const productsdefault = [
+    {
+      id: 1,
+      name: { en: "Product 1", ar: "المنتج 1" },
+      size: 1000,
+      price: 500,
+    },
+    {
+      id: 2,
+      name: { en: "Product 2", ar: "المنتج 1" },
+      size: 500,
+      price: 250,
+    },
+    {
+      id: 3,
+      name: { en: "Product 3", ar: "المنتج 1" },
+      size: 250,
+      price: 150,
+    },
+  ]
 
   useEffect(() => {
     getProducts();
@@ -42,8 +61,8 @@ export default function Products() {
       )}
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 w-full place-items-center">
-        {products.length > 0 ? (
-          products.map((product, index) => (
+        {productsdefault.length > 0 ? (
+          productsdefault.map((product, index) => (
             <ProductCard 
               key={product.id}  
               id={product.id}
