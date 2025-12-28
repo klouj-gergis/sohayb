@@ -73,8 +73,8 @@ export default function Products() {
               index={index}
             />
           ))
-        ) : (
-          !loading && !error && (
+        ) : (""
+          /* !loading && !error && (
             <div className="col-span-full text-center py-12">
               <p className="text-gray-500 text-xl mb-4">No products available</p>
               <button 
@@ -84,7 +84,7 @@ export default function Products() {
                 Refresh Products
               </button>
             </div>
-          )
+          ) */
         )}
       </div>
     </section>
