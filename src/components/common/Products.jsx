@@ -11,18 +11,21 @@ export default function Products() {
       name: { en: "Product 1", ar: "المنتج 1" },
       size: 1000,
       price: 500,
+      image: '/images/bottle.jpg'
     },
     {
       id: 2,
       name: { en: "Product 2", ar: "المنتج 1" },
       size: 500,
       price: 250,
+      image: '/images/bottle.jpg'
     },
     {
       id: 3,
       name: { en: "Product 3", ar: "المنتج 1" },
       size: 250,
       price: 150,
+      image: '/images/bottle.jpg'
     },
   ]
 
@@ -69,7 +72,8 @@ export default function Products() {
               name={product.name} 
               price={product.price} 
               size={product.size} 
-              imageUrl={`${import.meta.env.VITE_API_URL}/storage/${product.image}`} 
+              /* imageUrl={`${import.meta.env.VITE_API_URL}/storage/ ${product.image}`}  */
+              imageUrl={product.image}
               index={index}
             />
           ))
