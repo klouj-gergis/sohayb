@@ -48,7 +48,7 @@ export default function Products() {
     >
       <h2 className='text-4xl text-olive font-semibold mb-8'>Products</h2>
       
-      {error && (
+      {/* {error && (
         <div className="w-full max-w-4xl mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center">
           {error}
           <button 
@@ -58,10 +58,10 @@ export default function Products() {
             Retry
           </button>
         </div>
-      )}
+      )} */}
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 w-full place-items-center">
-        {productsdefault.length > 0 ? (
+        {/* productsdefault.length > 0 ? ( */
           productsdefault.map((product, index) => (
             <ProductCard 
               key={product.id}  
@@ -73,8 +73,8 @@ export default function Products() {
               index={index}
             />
           ))
-        ) : (""
-          /* !loading && !error && (
+        /* ) : (
+          !loading && !error && (
             <div className="col-span-full text-center py-12">
               <p className="text-gray-500 text-xl mb-4">No products available</p>
               <button 
@@ -84,8 +84,8 @@ export default function Products() {
                 Refresh Products
               </button>
             </div>
-          ) */
-        )}
+          )
+        ) */ }
       </div>
     </section>
   );
